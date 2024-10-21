@@ -1,7 +1,5 @@
 "use client";
 
-import FoodCard from "@/components/food-card";
-import PetCard from "@/components/pet-card";
 import SupplyCard from "@/components/supply-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
@@ -10,7 +8,6 @@ import { useRef } from "react";
 import cn from "@/utils/style/cn";
 
 export default function RecentlyViewed() {
-
   //Handle fetching data from local storage here
   const recentlyProduct = new Array(3);
   const pNum = recentlyProduct.length;
