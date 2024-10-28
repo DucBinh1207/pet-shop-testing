@@ -77,7 +77,11 @@ export default function SuppliesContent() {
 
     params.append("sort", sort);
 
+<<<<<<< HEAD
     params.append("page", paging.toString());
+=======
+    params.append("paging", paging.toString());
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
   }, [category, color, size, sort, paging]);
 
   return (

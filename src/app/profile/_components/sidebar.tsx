@@ -2,12 +2,19 @@ import LogOutIcon from "@/components/common/icons/log-out-icon";
 import { Tabs } from "@/constants/profile-tabs";
 import cn from "@/utils/style/cn";
 import Image from "next/image";
+<<<<<<< HEAD
+=======
+import { useRouter } from "next/navigation";
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
 import { Dispatch, SetStateAction } from "react";
 import { useShallow } from "zustand/react/shallow";
 import { TabsType } from "./page-content";
 import useOrder from "../_shared/use-order";
+<<<<<<< HEAD
 import { LogOut } from "@/services/api/auth-api";
 import { deleteAuthTokenFromInternalServer } from "@/services/api/internal-auth-api";
+=======
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
 
 type props = {
   tabActive: TabsType;
@@ -15,6 +22,11 @@ type props = {
 };
 
 export default function Sidebar({ tabActive, setTabActive }: props) {
+<<<<<<< HEAD
+=======
+  const router = useRouter();
+
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
   const { clearOrder } = useOrder(
     useShallow((state) => ({
       clearOrder: state.clearOrder,
@@ -92,10 +104,15 @@ export default function Sidebar({ tabActive, setTabActive }: props) {
           </li>
           <li
             className="flex cursor-pointer gap-[4px] hover:text-secondary smallest-screen:justify-center"
+<<<<<<< HEAD
             onClick={async () => {
               await LogOut();
               await deleteAuthTokenFromInternalServer();
               window.location.href = "/";
+=======
+            onClick={() => {
+              router.push("/");
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
             }}
           >
             <LogOutIcon size={14} className="fill-current" />

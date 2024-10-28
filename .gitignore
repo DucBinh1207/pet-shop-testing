@@ -10,12 +10,15 @@ package-lock.json
 # testing
 /coverage
 
+<<<<<<< HEAD
 # next.js
 /.next/
 /out/
 
 # production
 /build
+=======
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
 
 # misc
 .DS_Store
@@ -28,6 +31,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+<<<<<<< HEAD
 
 # vercel
 .vercel
@@ -35,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+=======
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3

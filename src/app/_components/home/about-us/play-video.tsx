@@ -26,7 +26,11 @@ export default function PlayVideo() {
 
       {isOpen && (
         <>
+<<<<<<< HEAD
           <div className="fixed left-[50%] top-[50%] z-[110] h-[90vh] w-[90vw] translate-x-[-50%] translate-y-[-50%] p-[50px] small-screen:h-0 small-screen:pb-[56.25%]">
+=======
+          <div className="fixed left-[50%] top-[50%] z-[90] h-[90vh] w-[90vw] translate-x-[-50%] translate-y-[-50%] p-[50px] small-screen:h-0 small-screen:pb-[56.25%]">
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
             <iframe
               className="absolute left-0 top-0 z-[100] h-full w-full"
               src="https://www.youtube.com/embed/Y6cwMDpARao?autoplay=1&rel=0&si=-Ahx4FeFrsBCfiAt"
@@ -41,7 +45,11 @@ export default function PlayVideo() {
             startIcon={<CancelIcon size={32} className="fill-current" />}
             variant="none"
             size="none"
+<<<<<<< HEAD
             className="fixed right-[1vw] top-[1vh] z-[110] text-center"
+=======
+            className="fixed right-[1vw] top-[1vh] z-[101] text-center"
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
             onClick={() => {
               setIsOpen(false);
             }}
@@ -49,7 +57,11 @@ export default function PlayVideo() {
 
           <div
             className={cn(
+<<<<<<< HEAD
               "fixed inset-0 z-[105] h-[100vh] w-[100vw] bg-overlay_color transition-opacity",
+=======
+              "fixed inset-0 z-[89] h-[100vh] w-[100vw] bg-overlay_color transition-opacity",
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
               {
                 "block opacity-100": isOpen,
                 "hidden opacity-0": !isOpen,

@@ -23,9 +23,15 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"]
+<<<<<<< HEAD
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/verify-email"],
+=======
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
   "exclude": ["node_modules"]
 }
 

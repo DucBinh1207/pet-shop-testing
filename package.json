@@ -15,6 +15,10 @@
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
+=======
+    "cookie": "^1.0.1",
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
     "js-cookie": "^3.0.5",
     "lottie-react": "^2.4.0",
     "next": "14.2.8",
@@ -30,7 +34,10 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/cookie": "^0.6.0",
+=======
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",

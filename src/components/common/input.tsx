@@ -43,6 +43,10 @@ const inputVariants = cva(
       },
     },
     compoundVariants: [
+<<<<<<< HEAD
+=======
+      // Biến thể cho trạng thái focus
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
       {
         variant: "primary",
         class: "focus:outline-none focus:border-primary",
@@ -64,7 +68,22 @@ const inputVariants = cva(
 );
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
+<<<<<<< HEAD
   ({ inputSize, variant, type, className: classProps, ...rest }, ref) => {
+=======
+  (
+    {
+      inputSize,
+      variant,
+      trimOnBlur,
+      className: classProps,
+      onChange: onChangeProp,
+      onBlur: onBlurProp,
+      ...rest
+    },
+    ref,
+  ) => {
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
     const classVariants = useMemo(() => {
       return inputVariants({ inputSize, variant });
     }, [inputSize, variant]);
@@ -76,6 +95,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       className += " " + classProps;
     }
 
+<<<<<<< HEAD
     return (
       <input
         ref={ref}
@@ -84,6 +104,24 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         className={className}
         {...rest}
       />
+=======
+    const handleBlur = (event: React.FocusEvent<HTMLInputElement, Element>) => {
+      if (trimOnBlur) {
+        const trimmedValue = event.target.value.trim();
+        onChangeProp?.({
+          ...event,
+          target: {
+            ...event.target,
+            value: trimmedValue,
+          },
+        });
+        onBlurProp?.(event);
+      }
+    };
+
+    return (
+      <input ref={ref} className={className} {...rest} onBlur={handleBlur} />
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
     );
   },
 );

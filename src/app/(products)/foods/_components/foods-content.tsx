@@ -67,7 +67,11 @@ export default function FoodsContent() {
 
     params.append("sort", sort);
 
+<<<<<<< HEAD
     params.append("page", paging.toString());
+=======
+    params.append("paging", paging.toString());
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
   }, [category, ingredient, weight, sort, paging]);
 
   return (
@@ -81,7 +85,11 @@ export default function FoodsContent() {
         <div className="border-r border-solid border-light_gray_color_second large-screen:min-w-[232px] small-screen:relative small-screen:overflow-hidden">
           <div
             className={cn(
+<<<<<<< HEAD
               "sticky top-[90px] flex flex-col pb-[30px] transition-all duration-150 ease-linear large-screen:left-0 small-screen:fixed small-screen:right-0 small-screen:top-0 small-screen:z-[200] small-screen:h-full small-screen:w-[360px] small-screen:max-w-full small-screen:bg-white small-screen:pb-[30px] small-screen:leading-[1.23]",
+=======
+              "sticky left-0 top-[90px] flex flex-col pb-[30px] transition-all duration-150 ease-linear small-screen:fixed small-screen:right-0 small-screen:top-0 small-screen:z-[200] small-screen:h-full small-screen:w-[360px] small-screen:max-w-full small-screen:bg-white small-screen:pb-[30px] small-screen:leading-[1.23]",
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
               {
                 "small-screen:translate-x-0 small-screen:opacity-100":
                   isFilterOpen,

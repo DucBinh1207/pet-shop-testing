@@ -2,6 +2,10 @@ import Button from "@/components/common/button";
 import CartIcon from "@/components/common/icons/cart-icon";
 import MinusIcon from "@/components/common/icons/minus-icon";
 import PlusIcon from "@/components/common/icons/plus-icon";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 770cbee95062780d17344edad099c68177b6ace3
 import Input from "@/components/common/input";
 
 export default function PurchaseActions() {
